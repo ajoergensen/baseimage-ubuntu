@@ -1,4 +1,4 @@
-Alpine baseimage
+Ubuntu baseimage
 ================
 
 A baseimage based on [Phusion's base image](https://github.com/phusion/baseimage-docker)
