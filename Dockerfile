@@ -20,7 +20,7 @@ RUN \
 	dpkg-reconfigure locales && \
         apt-get -q update && \
 	apt-get -qy --force-yes dist-upgrade && \
-	apt-get -y install sudo apt-transport-https tzdata wget syslog-ng-core curl ca-certificates ssmtp perl-modules-5.22 && \
+	apt-get -y install sudo apt-transport-https tzdata wget syslog-ng-core curl ca-certificates ssmtp perl-modules-5.22 xz-utils && \
 	ln -fs /usr/share/zoneinfo/Europe/Copenhagen /etc/localtime && \
 	dpkg-reconfigure -f noninteractive tzdata && \
 	groupadd -r syslog && \
