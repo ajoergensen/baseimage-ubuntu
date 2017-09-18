@@ -24,8 +24,8 @@ RUN \
 	ln -fs /usr/share/zoneinfo/Europe/Copenhagen /etc/localtime && \
 	dpkg-reconfigure -f noninteractive tzdata && \
 	groupadd -r syslog && \
-	groupadd -g 911 app && \
 	useradd -u 911 -s /bin/false app && \
+	groupmod -g 911 app && \
 	usermod -G users app && \
 	mkdir -p /app /config /defaults && \
 	apt-get clean && \
